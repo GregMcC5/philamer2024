@@ -63,5 +63,5 @@ for record in [x for x in records if "map" in x[-2]]:
                         possible_lang_names.append(lang)
     output.append([record[1],record[-2][2:5], possible_langauges, possible_lang_names, record[-1] + record[-3]])
 
-mu.write_csv("Oct2023_map_lang_recs_2.csv", output)
+mu.write_csv("map_lang_recs.csv", output)
 print('done')
