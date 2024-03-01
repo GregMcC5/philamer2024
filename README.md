@@ -25,7 +25,7 @@ Firstly, in *develop_better_MARC_inventory.py*, we take *marc_lang_database.xml*
 
 Then runs *new_map_lang.py*, which loops through all the record in the philamer metadata (*dlxs.csv*) which have "map" set as their language. It then loops through each each key-value pair in *new_marc_lang_codes.json* and checks if that languages appears in the keywords or notes fields of the record. If it does, the full language name and code are saved under a "possible langs" field for that record. A spreadsheet with each "map" record, the possible languages w/ codes, and the reocrds notes and keywords field is written to *map_lang_recs.csv*.
 
-This spreadsheet was then manually reviewed, checking for instances where language names were incorrectly detected, identifying which the possible languages were correct, and conducting futher investigation where no languages were detected. Susan Go, Librarian for Southeast Asia, Australia,New Zealand and the Pacific Islands, was consulted when encountering records where not additonal language information was discernible from the metadata.
+This spreadsheet was then manually reviewed, checking for instances where language names were incorrectly detected, identifying which the possible languages were correct, and conducting futher investigation where no languages were detected. Susan Go, Librarian for Southeast Asia, Australia, New Zealand and the Pacific Islands, was consulted when encountering records where not additonal language information was discernible from the metadata.
 
 ## deploying_changes
 
